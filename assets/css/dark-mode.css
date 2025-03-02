@@ -1,0 +1,81 @@
+/* 🌙 Global Dark Mode */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ✅ Navbar Dark Mode */
+.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #444;
+}
+
+/* ✅ Sections (Including gray_bg) */
+.dark-mode .section-padding,
+.dark-mode .gray_bg, 
+.dark-mode #home {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+/* ✅ All Text & Fonts (Fix for Invisible Text) */
+.dark-mode p, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode span {
+    color: white !important;
+}
+
+/* ✅ Links */
+.dark-mode a {
+    color: #1e90ff !important;
+}
+
+/* ✅ Buttons */
+.dark-mode button, 
+.dark-mode .btn {
+    background-color: #444 !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+/* ✅ Cards, Services, Blog */
+.dark-mode .services-item, 
+.dark-mode .single_blog,
+.dark-mode .contact_form, 
+.dark-mode .footer-area,
+.dark-mode .banner_content {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #555;
+}
+
+/* ✅ Input Fields */
+.dark-mode input, 
+.dark-mode textarea {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #666 !important;
+}
+
+/* ✅ Tables */
+.dark-mode table {
+    background-color: #1a1a1a !important;
+    color: white !important;
+}
+
+/* ✅ Footer */
+.dark-mode .footer-area {
+    background-color: #181818 !important;
+}
+
+/* ✅ Blog Section */
+.dark-mode .blog-info {
+    background-color: #222 !important;
+    color: white !important;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nitins-archivements</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #000428, #004e92);
+            flex-direction: column;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px cyan, 0 0 40px blue;
+            text-align: center;
+            width: 420px;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            animation: float 3s infinite ease-in-out;
+            border: 3px solid transparent;
+            background-clip: padding-box;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px cyan, 0 0 50px blue;
+            border-image-source: linear-gradient(45deg, cyan, blue, magenta);
+            border-image-slice: 1;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid cyan;
+            transition: transform 0.6s ease;
+        }
+        .profile-pic:hover {
+            transform: rotateY(360deg);
+        }
+        h2 {
+            font-size: 22px;
+            background: linear-gradient(90deg, cyan, magenta);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px cyan; }
+            to { text-shadow: 0 0 15px magenta; }
+        }
+        .stats {
+            margin-top: 15px;
+            text-align: left;
+            padding: 20px;
+            background: rgba(0, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 0 10px cyan;
+        }
+        .stats p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            color: cyan;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .links a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 15px cyan;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 450px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 130px;
+            height: 130px;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid cyan;
+            box-shadow: 0 0 10px cyan;
+            filter: grayscale(20%);
+        }
+        .gallery img:hover {
+            transform: scale(1.2) rotate(5deg);
+            box-shadow: 0 0 25px cyan;
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile-pic" src="https://github.com/nitinscodehub.png" alt="Profile Picture">
+        <h2>mr nitin ❤️</h2>
+        <div class="stats">
+            <p>🚀 GitHub: <strong>100+ Repos</strong></p>
+            <p>🏆 Codeforces: <strong>Expert</strong></p>
+            <p>💡 LeetCode: <strong>500+ Problems Solved</strong></p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/nitinscodehub" target="_blank">GitHub Profile</a> |
+            <a href="https://www.codechef.com/users/nitincodecheff" target="_blank">CodeChef Profile</a> |
+            <a href="https://leetcode.com/u/ynJHWbuuyU/" target="_blank">LeetCode Profile</a>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="https://media.licdn.com/dms/image/v2/D4E22AQHW1bTwCcoE4w/feedshare-shrink_800/feedshare-shrink_800/0/1697483188202?e=1743638400&v=beta&t=YJI9dcUYNfcMqYK_npsKVzLgnj9Ioi9QburAI9B3d_w" alt="Achievement 1">
+        <img src="assets/img/nitind.jpg" alt="Achievement 2">
+        <img src="assets/img/nitin medal.jpg" alt="Achievement 3">
+        
+    </div>
+</body>
+</html>
